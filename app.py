@@ -435,8 +435,11 @@ def typewriter(text, speed=0.02):
 # -----------------------------
 # LOAD MISTRAL
 # -----------------------------
+#client = Mistral(
+   # api_key="wb87pSIrDSjKeGZCnZ48ba7D0USHSPHZ")
+   
 client = Mistral(
-    api_key="wb87pSIrDSjKeGZCnZ48ba7D0USHSPHZ"
+    api_key=os.environ["MISTRAL_API_KEY"]
 )
 
 # -----------------------------
