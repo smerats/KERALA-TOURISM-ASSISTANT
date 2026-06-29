@@ -1,0 +1,198 @@
+﻿Diagnose log at 2026-06-29T15:18:01Z
+
+AppPath: C:\Program Files\Git\mingw64\bin\git-credential-manager.exe
+InstallDir: C:\Program Files\Git\mingw64\bin\
+Version: 2.7.3+5fa7116896c82164996a609accd1c5ad90fe730a
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 26200)
+Reading environment variables... OK
+ Variables:
+SESSIONNAME=Console
+ProgramFiles(x86)=C:\Program Files (x86)
+MSYSTEM=MINGW64
+ProgramW6432=C:\Program Files
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 154 Stepping 3, GenuineIntel
+OnlineServices=Online Services
+PROCESSOR_ARCHITECTURE=AMD64
+VSCODE_GIT_ASKPASS_MAIN=c:\Users\SMERA T S\AppData\Roaming\Code\User\globalStorage\vscode.git\askpass\70789581cae28aa7\askpass-main.js
+Path=C:/Program Files/Git/mingw64/libexec/git-core;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\SMERA T S\bin;C:\Users\SMERA T S\OneDrive\Desktop\Python_Practice (2)\Python_Practice\.venv\Scripts;c:\Users\SMERA T S\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\SMERA T S\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\app\SMERATS\product\21c\dbhomeXE\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\HP\HP OCR\DB_Lib\;C:\Program Files\HP\Common\HPDestPlgIn\;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\SMERA T S\AppData\Local\Programs\Python\Launcher\;C:\Users\SMERA T S\AppData\Local\Microsoft\WindowsApps;C:\Program Files\HP\Common\HPDestPlgIn\;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Users\SMERA T S\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SMERA T S\AppData\Local\Python\bin;C:\Users\SMERA T S\AppData\Roaming\npm;C:\Users\SMERA T S\AppData\Local\Programs\Antigravity IDE\bin
+LANG=en_US.UTF-8
+VSCODE_GIT_IPC_HANDLE=\\.\pipe\vscode-git-dab0de23f7-sock
+PROCESSOR_REVISION=9a03
+TEMP=C:\Users\SMERAT~1\AppData\Local\Temp
+USERPROFILE=C:\Users\SMERA T S
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+LOGONSERVER=\\LAPTOP-SK92DJO8
+TERM=xterm-256color
+USERNAME=SMERA T S
+SystemRoot=C:\WINDOWS
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_18584_URSQAMAOBNMPTLFI
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+PLINK_PROTOCOL=ssh
+_OLD_VIRTUAL_PATH=c:\Users\SMERA T S\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\SMERA T S\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\app\SMERATS\product\21c\dbhomeXE\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\HP\HP OCR\DB_Lib\;C:\Program Files\HP\Common\HPDestPlgIn\;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\SMERA T S\AppData\Local\Programs\Python\Launcher\;C:\Users\SMERA T S\AppData\Local\Microsoft\WindowsApps;C:\Program Files\HP\Common\HPDestPlgIn\;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Users\SMERA T S\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SMERA T S\AppData\Local\Python\bin;C:\Users\SMERA T S\AppData\Roaming\npm;C:\Users\SMERA T S\AppData\Local\Programs\Antigravity IDE\bin
+OneDrive=C:\Users\SMERA T S\OneDrive
+USERDOMAIN_ROAMINGPROFILE=LAPTOP-SK92DJO8
+CommonProgramFiles=C:\Program Files\Common Files
+ZES_ENABLE_SYSMAN=1
+VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+PYTHON_BASIC_REPL=1
+ProgramData=C:\ProgramData
+platformcode=M7
+GIT_ASKPASS=c:\Users\SMERA T S\AppData\Roaming\Code\User\globalStorage\vscode.git\askpass\70789581cae28aa7\askpass.sh
+HOMEPATH=\Users\SMERA T S
+IGCCSVC_DB=AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9Szp5unVwk+/zyzrPfo3ZgQAAAACAAAAAAAQZgAAAAEAACAAAABFhUIf9Ay+BEK8yT0b5n2BuNbFNMyNaHcoa9eoRWVD+wAAAAAOgAAAAAIAACAAAABc2mWPUmlbeV0Rb7Cb7iAW/yKzDxcYGNsxcwvpFYHK32AAAABzbftIekBJuk0baisaS0w2KyM2/ztkm909/PAtbVSshgWoOAJ4ibvWM1JUUWkUtUbICR/MyiqZ2feZS9Ookf3BEizQLRa8/hwqFzJadyXOlnWsP0s7jrM/UIy9rh6sFcJAAAAA48qVAHJJjLmKbCmitqZ0Rdth8z7WW2Mz9AKX6FBx550mEGHgNXBdw8QjSifJcmmNAWEB437vm4G/cGn74Hghgg==
+COMPUTERNAME=LAPTOP-SK92DJO8
+PYTHONSTARTUP=c:\Users\SMERA T S\AppData\Roaming\Code\User\workspaceStorage\23b7c9931ece086d8bba83fa9065b283\ms-python.python\pythonrc.py
+VSCODE_INJECTION=1
+ALLUSERSPROFILE=C:\ProgramData
+CommonProgramW6432=C:\Program Files\Common Files
+EFC_7524_1592913036=1
+COPILOT_DEBUG_NONCE=b831235c74c3bccf31b361696ccd8102
+TMP=C:\Users\SMERAT~1\AppData\Local\Temp
+DriverData=C:\Windows\System32\Drivers\DriverData
+HOMEDRIVE=C:
+windir=C:\WINDOWS
+GIT_TRACE2_PARENT_SID=610e08db-4df4-4476-a0b2-de2fd7ed1503
+SystemDrive=C:
+NUMBER_OF_PROCESSORS=16
+OS=Windows_NT
+ProgramFiles=C:\Program Files
+ComSpec=C:\WINDOWS\system32\cmd.exe
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+HOME=C:\Users\SMERA T S
+EFC_7524_4126798990=1
+PSModulePath=C:\Users\SMERA T S\OneDrive\Pictures\문서\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+TMPDIR=C:\Users\SMERAT~1\AppData\Local\Temp
+VIRTUAL_ENV_PROMPT=.venv
+APPDATA=C:\Users\SMERA T S\AppData\Roaming
+USERDOMAIN=LAPTOP-SK92DJO8
+PROCESSOR_LEVEL=6
+VIRTUAL_ENV=C:\Users\SMERA T S\OneDrive\Desktop\Python_Practice (2)\Python_Practice\.venv
+LOCALAPPDATA=C:\Users\SMERA T S\AppData\Local
+VSCODE_GIT_ASKPASS_NODE=C:\Users\SMERA T S\AppData\Local\Programs\Microsoft VS Code\Code.exe
+PSExecutionPolicyPreference=RemoteSigned
+TERM_PROGRAM_VERSION=1.126.0
+RegionCode=APJ
+OneDriveConsumer=C:\Users\SMERA T S\OneDrive
+COLORTERM=truecolor
+PUBLIC=C:\Users\Public
+TERM_PROGRAM=vscode
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\SMERA T S\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\SMERA T S\AppData\Local\Temp\b03b47d6aa78fb57005cefc1'... OK
+Reading from temporary file 'C:\Users\SMERA T S\AppData\Local\Temp\b03b47d6aa78fb57005cefc1'... OK
+Deleting temporary file 'C:\Users\SMERA T S\AppData\Local\Temp\b03b47d6aa78fb57005cefc1'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\SMERA T S
+UserDataDirectoryPath: C:\Users\SMERA T S\.gcm
+GetCurrentDirectory(): C:\Users\SMERA T S\OneDrive\Desktop\Python_Practice (2)\Python_Practice
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com...Sending HEAD request to https://example.com... OK
+ OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:51761/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.54.0.windows.1'
+Locating current repository...Git repository at 'C:/Users/SMERA T S/OneDrive/Desktop/Python_Practice (2)/Python_Practice/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=schannel
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/SMERA T S/.gitconfig	user.name=SMERA T S
+file:C:/Users/SMERA T S/.gitconfig	user.email=smerasam2006@gmail.com
+file:C:/Users/SMERA T S/.gitconfig	credential.helper=
+file:C:/Users/SMERA T S/.gitconfig	credential.helper=C:/Program\ Files/Git/mingw64/bin/git-credential-manager.exe
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/smerats/KERALA-TOURISM-ASSISTANT.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\SMERA T S\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\SMERA T S\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
