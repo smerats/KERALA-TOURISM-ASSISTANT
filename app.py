@@ -47,8 +47,8 @@ def send_otp_email(recipient_email, otp):
     try:
         sender_email = st.secrets["SENDER_EMAIL"]
         sender_password = st.secrets["SENDER_APP_PASSWORD"]
-    except Exception as e:
-        return False, f"Email service not configured (Details: {type(e).__name__} - {str(e)}). Please check your Streamlit Secrets."
+    except Exception:
+        return False, "Email service not configured. Please contact the administrator."
 
     subject = "🌴 Kerala Tourism Assistant — Email Verification OTP"
     body = f"""\
