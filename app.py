@@ -67,18 +67,50 @@ Kerala Tourism Assistant Team
 
     html_body = f"""\
 <html>
-<body style="font-family: sans-serif; padding: 20px; color: #333; background-color: #fafafa;">
-  <div style="max-width: 500px; margin: 0 auto; background: #ffffff; padding: 30px; border-radius: 8px; border: 1px solid #e0e0e0;">
-    <h2 style="color: #11998e; margin-top: 0;">Kerala Tourism Assistant</h2>
-    <p>Hello,</p>
-    <p>Your one-time verification code is:</p>
-    <div style="font-size: 32px; font-weight: bold; letter-spacing: 5px; color: #11998e; margin: 20px 0; padding: 10px; background: #f0fdfa; border-radius: 4px; text-align: center;">
-      {otp}
-    </div>
-    <p style="font-size: 13px; color: #666;">This code is valid for 10 minutes. Please do not share this code with anyone.</p>
-    <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
-    <p style="font-size: 12px; color: #999;">If you did not request this, you can safely ignore this email.</p>
-  </div>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f8fafc; color: #334155;">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f8fafc; padding: 40px 20px;">
+    <tr>
+      <td align="center">
+        <table width="100%" style="max-width: 480px; background-color: #ffffff; border-radius: 16px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px rgba(17, 153, 142, 0.05);">
+          <!-- Brand Top Accent -->
+          <tr>
+            <td height="6" style="background: linear-gradient(90deg, #11998e, #38ef7d);"></td>
+          </tr>
+          <!-- Body Content -->
+          <tr>
+            <td style="padding: 40px 32px;">
+              <h2 style="font-size: 22px; font-weight: 700; color: #11998e; margin: 0 0 6px 0; letter-spacing: -0.5px;">🌴 Kerala Tourism Assistant</h2>
+              <p style="font-size: 13px; color: #94a3b8; margin: 0 0 30px 0; text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">Email Verification</p>
+              
+              <p style="font-size: 15px; line-height: 1.6; margin: 0 0 16px 0; color: #334155;">Hello,</p>
+              <p style="font-size: 15px; line-height: 1.6; margin: 0 0 24px 0; color: #334155;">Welcome to Kerala Tourism Assistant! Please use the verification code below to complete your registration:</p>
+              
+              <!-- OTP Container -->
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin: 30px 0;">
+                <tr>
+                  <td align="center">
+                    <div style="display: inline-block; background-color: #f0fdf4; border: 1.5px solid rgba(17, 153, 142, 0.18); padding: 18px 36px; border-radius: 14px;">
+                      <span style="font-size: 34px; font-weight: 800; letter-spacing: 8px; color: #11998e; font-family: monospace;">{otp}</span>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0 0 30px 0; text-align: center;">
+                This OTP is valid for <strong>10 minutes</strong>. Please do not share it with anyone.
+              </p>
+              
+              <hr style="border: none; border-top: 1px solid #f1f5f9; margin: 30px 0;">
+              
+              <p style="font-size: 12px; line-height: 1.6; color: #94a3b8; margin: 0; text-align: center;">
+                If you did not request this registration, you can safely ignore this email.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
 """
