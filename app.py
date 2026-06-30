@@ -115,10 +115,11 @@ If you did not request this, please ignore this email.
         return False, f"Failed to send OTP: {str(e)}"
 
 def register_user(email, password):
+    email_clean = email.strip().lower()
     users = load_users()
-    if email in users:
+    if email_clean in users:
         return False, "Email already registered!"
-    users[email] = {
+    users[email_clean] = {
         "password": hash_password(password),
         "sessions": {}
     }
@@ -126,24 +127,27 @@ def register_user(email, password):
     return True, "Registration successful!"
 
 def login_user(email, password):
+    email_clean = email.strip().lower()
     users = load_users()
-    if email not in users:
+    if email_clean not in users:
         return False, "Email not found!"
-    if users[email]["password"] != hash_password(password):
+    if users[email_clean]["password"] != hash_password(password):
         return False, "Incorrect password!"
-    return True, users[email].get("sessions", {})
+    return True, users[email_clean].get("sessions", {})
 
 def save_user_sessions(email, sessions):
+    email_clean = email.strip().lower()
     users = load_users()
-    if email in users:
-        users[email]["sessions"] = sessions
+    if email_clean in users:
+        users[email_clean]["sessions"] = sessions
         save_users(users)
 
 def delete_user(email):
     """Permanently delete a user account from storage."""
+    email_clean = email.strip().lower()
     users = load_users()
-    if email in users:
-        del users[email]
+    if email_clean in users:
+        del users[email_clean]
         save_users(users)
         return True
     return False
@@ -659,13 +663,14 @@ def show_auth_page():
         password = st.text_input("🔒 Password", type="password", placeholder="Enter your password", key="login_pass")
         st.markdown("<br>", unsafe_allow_html=True)
         if st.button("Login →", use_container_width=True, type="primary"):
-            if not email or not password:
+            email_clean = email.strip().lower()
+            if not email_clean or not password:
                 st.error("Please fill in all fields.")
             else:
-                success, result = login_user(email, password)
+                success, result = login_user(email_clean, password)
                 if success:
                     st.session_state.logged_in = True
-                    st.session_state.user_email = email
+                    st.session_state.user_email = email_clean
                     # Load the user's saved sessions
                     saved_sessions = result
                     if saved_sessions:
@@ -695,9 +700,10 @@ def show_auth_page():
                 reg_confirm = st.text_input("✅ Confirm", type="password", placeholder="Repeat password", key="reg_confirm")
             st.markdown("<br>", unsafe_allow_html=True)
             if st.button("📨 Send OTP to Mail", use_container_width=True, type="primary"):
-                if not reg_email or not reg_pass or not reg_confirm:
+                reg_email_clean = reg_email.strip().lower()
+                if not reg_email_clean or not reg_pass or not reg_confirm:
                     st.error("Please fill in all fields.")
-                elif not is_valid_email_format(reg_email):
+                elif not is_valid_email_format(reg_email_clean):
                     st.error("❌ Invalid email format. Please enter a valid email address (e.g. you@gmail.com).")
                 elif len(reg_pass) < 6:
                     st.error("Password must be at least 6 characters.")
@@ -706,19 +712,19 @@ def show_auth_page():
                 else:
                     # Check if already registered
                     existing_users = load_users()
-                    if reg_email in existing_users:
+                    if reg_email_clean in existing_users:
                         st.error("❌ This email is already registered! Please login.")
                     else:
                         with st.spinner("Sending OTP to your email..."):
                             otp = generate_otp()
-                            sent, send_msg = send_otp_email(reg_email, otp)
+                            sent, send_msg = send_otp_email(reg_email_clean, otp)
                         if sent:
                             st.session_state.otp_sent = True
                             st.session_state.otp_code = otp
-                            st.session_state.otp_email = reg_email
+                            st.session_state.otp_email = reg_email_clean
                             st.session_state.otp_password = reg_pass
                             st.session_state.otp_timestamp = time.time()
-                            st.success(f"✅ OTP sent to **{reg_email}**! Check your inbox (and spam folder).")
+                            st.success(f"✅ OTP sent to **{reg_email_clean}**! Check your inbox (and spam folder).")
                             time.sleep(1)
                             st.rerun()
                         else:
