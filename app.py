@@ -50,49 +50,34 @@ def send_otp_email(recipient_email, otp):
     except Exception:
         return False, "Email service not configured. Please contact the administrator."
 
-    subject = "🌴 Kerala Tourism Assistant — Email Verification OTP"
-    body = f"""\
-Hello,
+    subject = f"Your Verification Code: {otp}"
+    body = f"""Hello,
 
-You are registering on Kerala Tourism Assistant.
+Your verification code for Kerala Tourism Assistant is: {otp}
 
-Your One-Time Password (OTP) is:
+This code is valid for 10 minutes. Please do not share it with anyone.
 
-    {otp}
-
-This OTP is valid for 10 minutes. Do not share it with anyone.
-
-If you did not request this, please ignore this email.
-
-— Kerala Tourism Assistant Team
+Thank you,
+Kerala Tourism Assistant Team
 """
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
-    msg["From"] = formataddr(("Kerala Tourism Assistant 🌴", sender_email))
+    msg["From"] = formataddr(("Kerala Tourism Assistant", sender_email))
     msg["To"] = recipient_email
 
     html_body = f"""\
 <html>
-<body style="font-family: Arial, sans-serif; background: #f0f4f4; padding: 30px;">
-  <div style="max-width:480px;margin:0 auto;background:white;border-radius:18px;
-              box-shadow:0 8px 32px rgba(17,153,142,0.15);padding:36px 32px;">
-    <h2 style="text-align:center;background:linear-gradient(135deg,#11998e,#38ef7d);
-               -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-               font-size:1.7rem;margin-bottom:4px;">🌴 Kerala Tourism Assistant</h2>
-    <p style="text-align:center;color:#888;margin-top:0;">Email Verification</p>
-    <hr style="border:none;border-top:1px solid #eee;margin:20px 0;">
-    <p style="color:#333;">Hello,</p>
-    <p style="color:#333;">Use the OTP below to complete your registration:</p>
-    <div style="text-align:center;margin:28px 0;">
-      <span style="display:inline-block;background:linear-gradient(135deg,#11998e,#38ef7d);
-                   color:white;font-size:2.4rem;font-weight:900;letter-spacing:10px;
-                   padding:18px 32px;border-radius:16px;">{otp}</span>
+<body style="font-family: sans-serif; padding: 20px; color: #333; background-color: #fafafa;">
+  <div style="max-width: 500px; margin: 0 auto; background: #ffffff; padding: 30px; border-radius: 8px; border: 1px solid #e0e0e0;">
+    <h2 style="color: #11998e; margin-top: 0;">Kerala Tourism Assistant</h2>
+    <p>Hello,</p>
+    <p>Your one-time verification code is:</p>
+    <div style="font-size: 32px; font-weight: bold; letter-spacing: 5px; color: #11998e; margin: 20px 0; padding: 10px; background: #f0fdfa; border-radius: 4px; text-align: center;">
+      {otp}
     </div>
-    <p style="color:#888;font-size:0.85rem;text-align:center;">Valid for <strong>10 minutes</strong>. Do not share this OTP.</p>
-    <hr style="border:none;border-top:1px solid #eee;margin:20px 0;">
-    <p style="color:#aaa;font-size:0.75rem;text-align:center;">
-      If you did not request this, please ignore this email.
-    </p>
+    <p style="font-size: 13px; color: #666;">This code is valid for 10 minutes. Please do not share this code with anyone.</p>
+    <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+    <p style="font-size: 12px; color: #999;">If you did not request this, you can safely ignore this email.</p>
   </div>
 </body>
 </html>
