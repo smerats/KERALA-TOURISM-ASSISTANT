@@ -33,6 +33,100 @@
           {
             "role": "assistant",
             "content": "Kannur is renowned for its vibrant **Theyyam** performances, a unique ritual art form of Kerala that blends dance, music, and devotion. This centuries-old tradition is deeply rooted in the Malabar region, particularly in Kannur and Kasaragod districts. Theyyam is performed in front of small shrines or sacred groves (*kaavu*) by male artists from the lower castes, who embody the spirit of deities or ancestral heroes.\n\nThe colorful costumes, elaborate makeup, and hypnotic drumming create a mesmerizing spectacle. Some famous Theyyams include:\n- **Raktha Chamundi** (goddess of power)\n- **Muchilottu Bhagavathi** (goddess of prosperity)\n- **Vishnumoorthy** (a fierce form of Lord Vishnu)\n\nTheyyam season peaks from **November to May**, coinciding with festivals like **Kaliyattam** and **Thalassery Pooram**. Visitors can witness performances at temples like **Parassinikadavu Muthappan Temple** or **Kalarivathukkal Bhagavathy Temple**.\n\n*Tip:* Check local schedules, as Theyyam is often held at night under torchlight! Would you like recommendations for nearby seafood spots to pair with your cultural experience? \ud83d\ude0a"
+          },
+          {
+            "role": "user",
+            "content": "kerala food"
+          }
+        ]
+      },
+      "1782805417.6291063": {
+        "title": "tell me about kodugallur ",
+        "messages": [
+          {
+            "role": "user",
+            "content": "tell me about kodugallur "
+          },
+          {
+            "role": "assistant",
+            "content": "Kodungallur (formerly known as Cranganore) is a historic town in Thrissur district, Kerala, with deep cultural and religious significance. It\u2019s one of the oldest settlements in India and was a major port during ancient times, connecting Kerala to the Roman, Chinese, and Arab worlds.\n\nKodungallur is famous for its **Kodungallur Bhagavathy Temple**, a revered Shakti temple dedicated to the goddess Bhadrakali, known for its vibrant **Thalappoli festival** (a ritualistic offering to the deity). The town is also closely linked to the **Chera dynasty** and is mentioned in ancient Sangam literature.\n\nFor art lovers, Kodungallur is part of the **Kochi-Muziris Biennale** route, as nearby Fort Kochi hosts the festival. While not a direct venue, its proximity makes it a great stop for travelers exploring the cultural trail.\n\nKodungallur is also known for its **Malabar Biryani**, especially in nearby **Kozhikode (Calicut)**, where you can savor the authentic version\u2014lighter, fragrant, and slow-cooked with spices like cardamom and saffron.\n\nIf you're visiting Kerala, Kodungallur is worth a detour for its history, temples, and culinary delights!"
+          },
+          {
+            "role": "user",
+            "content": "beaches in thrissur"
+          },
+          {
+            "role": "assistant",
+            "content": "Thrissur doesn\u2019t have any major beaches like Kovalam or Varkala, but if you're looking for a coastal getaway near Thrissur, **Cherai Beach** is your best bet\u2014it\u2019s just about 50 km away and known for its calm waters, golden sands, and great swimming spots. It\u2019s a quieter alternative to the more touristy beaches in Kerala, making it ideal for a relaxed family outing.\n\nIf you're open to exploring further, **Kovalam** (around 2.5 hours away) and **Varkala** (about 4 hours away) are fantastic options with stunning cliffs, luxury resorts, and vibrant beach vibes. For a more secluded experience, **Marari Beach** (around 3 hours from Thrissur) is pristine and perfect for unwinding.\n\nWould you like recommendations for beachside stays or activities near Thrissur?"
+          }
+        ]
+      },
+      "1782805542.990737": {
+        "title": "list out the beach side r...",
+        "messages": [
+          {
+            "role": "user",
+            "content": "list out the beach side restaurents"
+          }
+        ]
+      },
+      "1782805996.1902962": {
+        "title": "sunsets",
+        "messages": [
+          {
+            "role": "user",
+            "content": "sunsets"
+          },
+          {
+            "role": "assistant",
+            "content": "Waynad and Munnar both offer breathtaking sunset views that are perfect for ending your day with a touch of magic! In Wayanad, head to **Chembra Peak** for a panoramic sunset over the misty Western Ghats, or visit **Edakkal Caves** for a unique vantage point surrounded by lush greenery. The serene **Pookode Lake** also offers a peaceful sunset experience with reflections dancing on the water.\n\nIn Munnar, the **Top Station** is a must-visit for a stunning sunset over the tea plantations and rolling hills. The **Echo Point** and **Mattupetty Dam** also provide fantastic spots to soak in the golden hues as the sun dips below the horizon. Whether you're in Wayanad or Munnar, these sunset spots will leave you spellbound!"
+          }
+        ]
+      },
+      "1782806063.465826": {
+        "title": "ernakulam",
+        "messages": [
+          {
+            "role": "user",
+            "content": "ernakulam"
+          },
+          {
+            "role": "assistant",
+            "content": "Ernakulam, part of the bustling Kochi metropolitan area in Kerala, is a vibrant hub for culture, cuisine, and connectivity! As a major city in central Kerala, it\u2019s well-connected by air (via **Cochin International Airport**, just 30 km away), train (with frequent **Rajdhani/Duronto/Jan Shatabdi** services from Delhi, Mumbai, and other cities), and road networks.\n\nFor food lovers, **Kayees Biryani** in Ernakulam is a must-visit for its legendary **Malabar biryani**, while **Malabar Junction** and **Fort House Restaurant** offer exquisite seafood with waterfront views. If you're craving traditional Kerala flavors, **Rice Boat at Taj Malabar** serves an authentic **Sadya** (vegetarian feast on a banana leaf) daily or on Sundays\u2014don\u2019t miss the payasam (dessert)!\n\nThe city\u2019s streets, especially near **Broadway Market**, are packed with affordable local snacks, and **Fort Kochi\u2019s caf\u00e9s** add a colonial charm to your culinary adventure. Whether you're exploring heritage sites, shopping at MG Road, or diving into Kerala\u2019s flavors, Ernakulam is a perfect gateway to Kochi\u2019s magic! \ud83c\udf36\ufe0f\ud83c\udf5b"
+          }
+        ]
+      },
+      "1782806109.6694684": {
+        "title": "thrissur",
+        "messages": [
+          {
+            "role": "user",
+            "content": "thrissur"
+          },
+          {
+            "role": "assistant",
+            "content": "Thrissur, known as the cultural capital of Kerala, is a vibrant city steeped in tradition and history. It\u2019s home to the famous **Thrissur Vadakkunnathan Temple**, a stunning Shiva temple with a golden flagstaff and intricate murals, surrounded by a spacious courtyard. The temple is a key part of the **Thrissur Pooram**, Kerala\u2019s most spectacular temple festival, featuring grand processions of caparisoned elephants, fireworks, and traditional percussion ensembles.\n\nBeyond the temple, Thrissur offers a mix of heritage and modernity. You can explore the **Kerala Kalamandalam** (a hub for classical arts like Kathakali and Mohiniyattam), visit the **Vadakkunnathan Museum**, or stroll through the bustling **Swaroopam Market**. Food lovers shouldn\u2019t miss the **Thrissur Sadya**\u2014a wholesome vegetarian feast served on a banana leaf, often paired with local delicacies like **unniyappam** (sweet rice fritters).\n\nFor a taste of Malabar\u2019s flavors, try **Malabar Biryani** at places like **Thafreez** or **Rasna**, where the fragrant rice and tender meat (or veg options) are slow-cooked to perfection. And if you\u2019re visiting during **Thrissur Pooram** (April\u2013May), the city comes alive with colors, music, and devotion\u2014an experience not to be missed!\n\nWould you like recommendations for nearby attractions or places to stay?"
+          },
+          {
+            "role": "user",
+            "content": "who is the kerala tourism minister"
+          },
+          {
+            "role": "assistant",
+            "content": "The current **Kerala Tourism Minister** is **P. A. Mohammed Riyas**. He holds the portfolio of **Minister for Tourism, Culture, and Youth Affairs** in the Kerala government."
+          }
+        ]
+      },
+      "1782807454.9517634": {
+        "title": "who is the kerala tourism...",
+        "messages": [
+          {
+            "role": "user",
+            "content": "who is the kerala tourism minister "
+          },
+          {
+            "role": "assistant",
+            "content": "The current Minister for Tourism in Kerala is **P. C. Vishnunadh**, who was appointed in May 2026."
           }
         ]
       }
@@ -47,22 +141,8 @@
       }
     }
   },
-  "ashmith@gmail.com": {
-    "password": "3caa2622576304a207cd2ac23e03f05c611569395ce6f379210daead6b58c262",
-    "sessions": {
-      "1782736269.7769268": {
-        "title": "munnar",
-        "messages": [
-          {
-            "role": "user",
-            "content": "munnar"
-          },
-          {
-            "role": "assistant",
-            "content": "Munnar is a breathtaking hill station in Kerala, famous for its lush tea plantations, misty hills, and pleasant climate. Some of the must-visit spots include **Eravikulam National Park** (home to the endangered Nilgiri Tahr), **Top Station** for panoramic views, **Mattupetty Dam** for boating, **Echo Point** for its echoing sounds, **Attukal Waterfalls** for a refreshing dip, and the **Tea Museum** to learn about Kerala\u2019s tea heritage. It\u2019s also a fantastic destination for trekking and nature walks.\n\nThe best time to visit is from **September to May**, when the weather is cool and ideal for exploring.\n\nIf you're planning a trip from **Kochi**, it\u2019s about **130 km (3.5\u20134 hours by road)**. You can take a **taxi (\u20b92,500\u2013\u20b94,000 one-way)** or a **KSRTC bus (\u20b9120\u2013\u20b9200)**. For a **2-night stay in Munnar**, budget hotels cost around **\u20b91,200\u2013\u20b92,500 per night**. A **3-day trip for two** (including travel, stay, and activities) can range from **\u20b98,000\u2013\u20b915,000**.\n\nWould you like recommendations on itineraries or activities in Munnar? \ud83d\ude0a"
-          }
-        ]
-      }
-    }
+  "smera4lab@gmail.com": {
+    "password": "423686d416440010f01aa0c8ad6b6c2b12c3e7f3435aa9db0f3af15ab2fe1edf",
+    "sessions": {}
   }
 }
