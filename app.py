@@ -547,11 +547,10 @@ def typewriter(text, speed=0.02):
         """, unsafe_allow_html=True)
         time.sleep(speed)
 
-# -----------------------------
-# LOAD MISTRAL
-# -----------------------------
+# ── Securely load Mistral API key from Streamlit secrets ──
+mistral_api_key = st.secrets.get("MISTRAL_API_KEY", "YOUR_MISTRAL_API_KEY")
 client = Mistral(
-    api_key="v01hDlc9oVfQXyH4hNnB79S3FETN1Ffw"
+    api_key=mistral_api_key
 )
 
 # -----------------------------
