@@ -117,25 +117,41 @@ Kerala Tourism Assistant Team
     msg.attach(MIMEText(body, "plain"))
     msg.attach(MIMEText(html_body, "html"))
 
-    # Try Port 465 SSL first, fallback to Port 587 STARTTLS
-    try:
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=10) as server:
-            server.login(sender_email, sender_password)
-            server.sendmail(sender_email, recipient_email, msg.as_string())
-        return True, "OTP sent successfully!"
-    except Exception as ssl_err:
-        try:
+    def _attempt_send(use_ssl=True):
+        if use_ssl:
+            with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=10) as server:
+                server.login(sender_email, sender_password)
+                server.sendmail(sender_email, recipient_email, msg.as_string())
+        else:
             with smtplib.SMTP("smtp.gmail.com", 587, timeout=10) as server:
                 server.starttls()
                 server.login(sender_email, sender_password)
                 server.sendmail(sender_email, recipient_email, msg.as_string())
+
+    try:
+        try:
+            _attempt_send(use_ssl=True)
             return True, "OTP sent successfully!"
         except smtplib.SMTPAuthenticationError:
-            return False, "Gmail authentication failed. Please verify 2-Step Verification is ON and a valid 16-character Gmail App Password is configured in secrets."
-        except smtplib.SMTPRecipientsRefused:
-            return False, "❌ The recipient email address is invalid or refused by server."
-        except Exception as err:
-            return False, f"Failed to send OTP email: {str(err)}"
+            raise
+        except Exception:
+            _attempt_send(use_ssl=False)
+            return True, "OTP sent successfully!"
+    except smtplib.SMTPAuthenticationError as auth_err:
+        err_code = getattr(auth_err, 'smtp_code', 534)
+        err_msg = getattr(auth_err, 'smtp_error', b'').decode('utf-8', errors='ignore') if isinstance(getattr(auth_err, 'smtp_error', b''), bytes) else str(getattr(auth_err, 'smtp_error', ''))
+        return False, (
+            f"❌ Gmail Authentication Failed (Code {err_code}): Google rejected the login credentials for **{sender_email}**.\n\n"
+            f"**To fix this quickly:**\n"
+            f"1. **Unlock Account Access**: Log into `{sender_email}` in your browser and visit [accounts.google.com/DisplayUnlockCaptcha](https://accounts.google.com/DisplayUnlockCaptcha), then click **Continue**.\n"
+            f"2. **Generate New App Password**: Ensure 2-Step Verification is ON, then generate a new 16-character App Password at [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords).\n"
+            f"3. Update `SENDER_APP_PASSWORD` in `.streamlit/secrets.toml` (locally) and in Streamlit Dashboard Secrets (on Cloud).\n\n"
+            f"_Details: {err_msg}_"
+        )
+    except smtplib.SMTPRecipientsRefused:
+        return False, "❌ The recipient email address is invalid or refused by the mail server."
+    except Exception as err:
+        return False, f"Failed to send OTP email: {str(err)}"
 
 def register_user(email, password):
     email_clean = email.strip().lower()
