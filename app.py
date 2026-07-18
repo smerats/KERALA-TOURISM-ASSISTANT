@@ -43,10 +43,12 @@ def generate_otp():
     return str(random.randint(100000, 999999))
 
 def send_otp_email(recipient_email, otp):
-    """Send OTP to the given email via Gmail SMTP. Returns (success, message)."""
+    """Send OTP to the given email via SMTP. Returns (success, message)."""
     try:
         sender_email = str(st.secrets["SENDER_EMAIL"]).strip()
         sender_password = str(st.secrets["SENDER_APP_PASSWORD"]).replace(" ", "").strip()
+        smtp_server = str(st.secrets.get("SMTP_SERVER", "smtp.gmail.com")).strip()
+        smtp_port = int(st.secrets.get("SMTP_PORT", 465))
     except Exception:
         return False, "Email service not configured. Please add SENDER_EMAIL and SENDER_APP_PASSWORD to secrets."
 
@@ -118,12 +120,13 @@ Kerala Tourism Assistant Team
     msg.attach(MIMEText(html_body, "html"))
 
     def _attempt_send(use_ssl=True):
-        if use_ssl:
-            with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=10) as server:
+        if use_ssl and smtp_port == 465:
+            with smtplib.SMTP_SSL(smtp_server, smtp_port, timeout=10) as server:
                 server.login(sender_email, sender_password)
                 server.sendmail(sender_email, recipient_email, msg.as_string())
         else:
-            with smtplib.SMTP("smtp.gmail.com", 587, timeout=10) as server:
+            port = 587 if smtp_port == 465 else smtp_port
+            with smtplib.SMTP(smtp_server, port, timeout=10) as server:
                 server.starttls()
                 server.login(sender_email, sender_password)
                 server.sendmail(sender_email, recipient_email, msg.as_string())
@@ -141,12 +144,11 @@ Kerala Tourism Assistant Team
         err_code = getattr(auth_err, 'smtp_code', 534)
         err_msg = getattr(auth_err, 'smtp_error', b'').decode('utf-8', errors='ignore') if isinstance(getattr(auth_err, 'smtp_error', b''), bytes) else str(getattr(auth_err, 'smtp_error', ''))
         return False, (
-            f"❌ Gmail Authentication Failed (Code {err_code}): Google rejected the login credentials for **{sender_email}**.\n\n"
-            f"**To fix this quickly:**\n"
-            f"1. **Unlock Account Access**: Log into `{sender_email}` in your browser and visit [accounts.google.com/DisplayUnlockCaptcha](https://accounts.google.com/DisplayUnlockCaptcha), then click **Continue**.\n"
-            f"2. **Generate New App Password**: Ensure 2-Step Verification is ON, then generate a new 16-character App Password at [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords).\n"
-            f"3. Update `SENDER_APP_PASSWORD` in `.streamlit/secrets.toml` (locally) and in Streamlit Dashboard Secrets (on Cloud).\n\n"
-            f"_Details: {err_msg}_"
+            f"❌ Mail Authentication Failed (Code {err_code}): Server rejected login for **{sender_email}**.\n\n"
+            f"**To fix this:**\n"
+            f"1. **For Gmail**: Ensure **2-Step Verification** is ON for `{sender_email}`, then generate a new 16-character **App Password** at [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords).\n"
+            f"2. **Update Secrets**: Paste the new 16-character password into `SENDER_APP_PASSWORD` in Streamlit Secrets.\n\n"
+            f"_Server response: {err_msg}_"
         )
     except smtplib.SMTPRecipientsRefused:
         return False, "❌ The recipient email address is invalid or refused by the mail server."
