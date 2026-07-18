@@ -60,3 +60,17 @@ Kerala.png
 ## Author
 
 SMERA T S
+
+## 🚀 How Automatic Updates Work (Streamlit Cloud)
+
+Once your Streamlit Cloud app is connected to your GitHub repository (**smerats/KERALA-TOURISM-ASSISTANT**):
+
+1. **NO NEED to redo configuration or setup**: Secrets (API keys, email credentials) are saved permanently in Streamlit Cloud Settings.
+2. **Automatic Redeployment**: Any time you edit your code in Antigravity or VS Code, simply save the file and push to GitHub:
+   ```bash
+   git add .
+   git commit -m "Update feature or fix"
+   git push origin main
+   ```
+3. Streamlit Cloud automatically detects your commit within seconds and updates the live website automatically!
+
